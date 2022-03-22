@@ -1,6 +1,8 @@
-# Soundboard
-# Created by Mika "AgenttiX" Mäki at Assembly Summer 2016
-# GPLv3+
+"""
+Soundboard
+
+Created by Mika "AgenttiX" Mäki at Assembly Summer 2016
+"""
 
 import tkinter
 import generated_vlc as vlc
