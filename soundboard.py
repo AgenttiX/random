@@ -57,7 +57,5 @@ class Soundboard:
         # print(objgraph.show_most_common_types())
 
 
-def main():
+if __name__ == "__main__":
     Soundboard()
-
-main()
