@@ -1,20 +1,23 @@
 import pyqtgraph as pg
-from pyqtgraph.Qt import QtCore, QtGui
+from PySide6 import QtWidgets
 
-app = QtGui.QApplication([])
-win = QtGui.QMainWindow()
-btn = pg.ColorButton()
-win.setCentralWidget(btn)
-win.show()
-win.setWindowTitle('pyqtgraph example: ColorButton')
 
 def change(btn):
     print("change", btn.color())
+
+
 def done(btn):
     print("done", btn.color())
 
-btn.sigColorChanging.connect(change)
-btn.sigColorChanged.connect(done)
+
+app = QtWidgets.QApplication([])
+win = QtWidgets.QMainWindow()
+btn1 = pg.ColorButton()
+win.setCentralWidget(btn1)
+win.show()
+win.setWindowTitle('pyqtgraph example: ColorButton')
+
+btn1.sigColorChanging.connect(change)
+btn1.sigColorChanged.connect(done)
 
 app.exec()
-

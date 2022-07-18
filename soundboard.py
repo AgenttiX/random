@@ -5,7 +5,7 @@ Created by Mika "AgenttiX" Mäki at Assembly Summer 2016
 """
 
 import tkinter
-import generated_vlc as vlc
+import vlc
 import os
 import time
 import threading
